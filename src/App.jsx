@@ -40,9 +40,9 @@ function App() {
   function handleCopy(){
       if(inputRef.current){
           inputRef.current.style.color = "green"
+          inputRef.current.select();
       }
       window.navigator.clipboard.writeText(inputRef.current.value);
-      window.alert("password copied!")
 
   }
   return (
